@@ -1,0 +1,12 @@
+version: "1.0"
+services:
+  api:
+    image: "node:14"
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - .:/app
